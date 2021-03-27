@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="133.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vmeuble.LigneCommandeController">
+   <children>
+      <Label fx:id="idmeuble" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="6.0" prefHeight="125.0" prefWidth="164.0" text="XWCWX" wrapText="true">
+         <font>
+            <Font name="Segoe UI Light" size="16.0" />
+         </font>
+      </Label>
+      <Separator layoutX="171.0" layoutY="-4.0" opacity="0.72" orientation="VERTICAL" prefHeight="125.0" prefWidth="8.0" style="-fx-background-color: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" />
+      <Label fx:id="prixi" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="9.0" prefHeight="125.0" prefWidth="117.0" text="XWCWX" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="300.0" layoutY="-4.0" opacity="0.72" orientation="VERTICAL" prefHeight="125.0" prefWidth="8.0" style="-fx-background-color: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" />
+      <Label fx:id="qte" alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="7.0" prefHeight="125.0" prefWidth="106.0" text="XWCWX" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Light" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="432.0" layoutY="-6.0" opacity="0.72" orientation="VERTICAL" prefHeight="125.0" prefWidth="8.0" style="-fx-background-color: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" />
+      <Label fx:id="prixt" contentDisplay="CENTER" layoutX="442.0" prefHeight="133.0" prefWidth="180.0" text="TOTAL:" textAlignment="CENTER" textFill="#b24f4f">
+         <font>
+            <Font name="Segoe UI Light" size="25.0" />
+         </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Label>
+      <Circle fx:id="valide" fill="#801c62" layoutX="637.0" layoutY="70.0" radius="13.0" stroke="#d01616" strokeType="INSIDE" />
+      <Separator layoutY="125.0" prefHeight="4.0" prefWidth="650.0" style="-fx-background-color: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" />
+   </children>
+</AnchorPane>

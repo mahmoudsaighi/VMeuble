@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="705.0" prefWidth="1430.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vmeuble.LoginController">
+   <children>
+      <Pane prefHeight="715.0" prefWidth="1440.0" style="-fx-background-color: #2f2b43; -fx-background-radius: 5;">
+         <children>
+            <AnchorPane layoutY="-2.0" prefHeight="716.0" prefWidth="377.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox layoutY="360.0" prefHeight="301.0" prefWidth="330.0">
+                     <children>
+                        <JFXButton buttonType="RAISED" onAction="#gestionDuPersonnel" prefHeight="72.0" prefWidth="313.0" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Gestion Personnel">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Photo/icons8-conférence-96.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Segoe UI Light" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton buttonType="RAISED" onAction="#gestionStocks" prefHeight="65.0" prefWidth="303.0" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Gestion de stock">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Photo/icons8-vendre-les-stock-96.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Segoe UI Light" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#commandes" prefHeight="69.0" prefWidth="281.0" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text=" Commandes">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Photo/icons8-historique-des-commandes-96.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Segoe UI Light" size="18.0" />
+                           </font>
+                        </JFXButton>
+                        <JFXButton onAction="#Deconnexion" prefHeight="74.0" prefWidth="286.0" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text=" Deconnexion">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Photo/icons8-sortie-96.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Segoe UI Light" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+                  <Label layoutX="120.0" layoutY="243.0" prefHeight="53.0" prefWidth="141.0" style="-fx-background-color: white; -fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);;" text="Accueil" textFill="#c909d7">
+                     <font>
+                        <Font name="Segoe UI Light" size="46.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="-2.0" layoutY="329.0" prefHeight="25.0" prefWidth="379.0" style="-fx-background-color: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);; -fx-background-radius: 5;" />
+                  <ImageView fitHeight="205.0" fitWidth="214.0" layoutX="83.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photo/69338062_466950047370323_2208612525954564096_n.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Pane layoutX="372.0" prefHeight="716.0" prefWidth="1071.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="738.0" fitWidth="1078.0" layoutX="-6.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photo/457278-PFCNFP-77.jpg" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="213.0" layoutY="165.0" prefHeight="461.0" prefWidth="738.0" style="-fx-background-color: WHITE; -fx-opacity: 0.5;">
+                     <children>
+                        <Label layoutX="188.0" layoutY="79.0" prefHeight="144.0" prefWidth="473.0" text=" DECO RA" textAlignment="CENTER">
+                           <font>
+                              <Font name="Symbol" size="79.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="118.0" layoutY="237.0" prefHeight="33.0" prefWidth="520.0" text="Vivez l'expérience du réel sans même vous déplacez">
+                           <font>
+                              <Font size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="181.0" layoutY="284.0" prefHeight="28.0" prefWidth="395.0" text="Pour un chez-vous qui ne ressemble qu'à vous">
+                           <font>
+                              <Font name="Symbol" size="18.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

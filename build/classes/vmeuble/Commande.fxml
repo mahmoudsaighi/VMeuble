@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="805.0" prefWidth="1430.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vmeuble.CommandeController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <Pane prefHeight="805.0" prefWidth="1430.0" style="-fx-background-color: white;">
+         <children>
+            <JFXButton layoutX="1147.0" layoutY="26.0" onAction="#Retour" prefHeight="39.0" prefWidth="179.0" style="-fx-background-color: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Retour" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <TableView fx:id="table4" layoutX="1139.0" layoutY="204.0" prefHeight="462.0" prefWidth="265.0" style="-fx-background-color: #F5CAFF;">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="102.0" text="Id commande" />
+                <TableColumn fx:id="username" prefWidth="166.0" text="Client" />
+              </columns>
+            </TableView>
+            <AnchorPane fx:id="lolo" prefHeight="805.0" prefWidth="371.0" style="-fx-background-color: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);">
+               <children>
+                  <ImageView fitHeight="253.0" fitWidth="262.0" layoutX="57.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Photo/69338062_466950047370323_2208612525954564096_n.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutY="197.0" prefHeight="4.0" prefWidth="372.0" style="-fx-background-color: white;" />
+                  <Label layoutX="51.0" layoutY="83.0" prefHeight="50.0" prefWidth="265.0" text="Liste commande" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="34.0" />
+                     </font>
+                  </Label>
+                  <JFXButton layoutX="-1.0" layoutY="588.0" onAction="#Deconnexion" prefHeight="50.0" prefWidth="372.0" text="Deconnexion" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="18.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="50.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@Photo/icons8-déconnexion-50.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <JFXButton layoutX="1170.0" layoutY="705.0" onAction="#AfficherCommande" prefHeight="39.0" prefWidth="203.0" style="-fx-background-color: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Afficher commandes " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Separator layoutX="1114.0" orientation="VERTICAL" prefHeight="742.0" prefWidth="7.0" style="-fx-background-color: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" />
+            <JFXButton layoutX="1147.0" layoutY="126.0" onAction="#afficherINFOcommande" prefHeight="39.0" prefWidth="179.0" style="-fx-background-color: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="details commande" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <JFXButton layoutX="1166.0" layoutY="756.0" onAction="#imprimer" prefHeight="39.0" prefWidth="203.0" style="-fx-background-color: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Imprimer" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </JFXButton>
+            <Pane fx:id="print" layoutX="400.0" layoutY="14.0" prefHeight="790.0" prefWidth="690.0" style="-fx-background-color: white;">
+               <children>
+                  <JFXListView fx:id="commandelist" layoutX="6.0" layoutY="36.0" prefHeight="631.0" prefWidth="678.0" />
+                  <Label fx:id="prixF" layoutX="471.0" layoutY="665.0" prefHeight="50.0" prefWidth="215.0" text="total: 0$" underline="true">
+                     <font>
+                        <Font name="Segoe UI Light" size="32.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="7.0" prefHeight="36.0" prefWidth="152.0" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Meuble">
+                     <font>
+                        <Font name="Segoe UI Light" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="149.0" prefHeight="36.0" prefWidth="152.0" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Prix">
+                     <font>
+                        <Font name="Segoe UI Light" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="314.0" prefHeight="36.0" prefWidth="143.0" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Quantité">
+                     <font>
+                        <Font name="Segoe UI Light" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="457.0" prefHeight="36.0" prefWidth="143.0" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Prix item">
+                     <font>
+                        <Font name="Segoe UI Light" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="numero" layoutX="7.0" layoutY="676.0" prefHeight="39.0" prefWidth="283.0" text="Num Client : ">
+                     <font>
+                        <Font name="Segoe UI Light" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="616.0" prefHeight="36.0" prefWidth="68.0" style="-fx-text-fill: linear-gradient(to right top, #7a0020, #780035, #6c004d, #510066, #001b7a);" text="Valide">
+                     <font>
+                        <Font name="Segoe UI Light" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="9.0" layoutY="724.0" prefHeight="46.0" prefWidth="297.0" text="Signature : ....................">
+                     <font>
+                        <Font name="Segoe Print" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
